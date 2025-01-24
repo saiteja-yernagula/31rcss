@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding:0;
+            margin:0;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+
+        div{
+            /* border:1px solid black;
+            margin:20px;
+            padding:20px; */
+            display: inline-block;
+            width:24%;
+            
+        }
+
+        h1{
+            /* visibility: hidden; */
+            display: none;
+            display: block;
+        }
+        div>p{
+            color:red;
+            background: black;
+            
+        }
+
+        div~h1{
+            background: yellow;
+        }
+       
+      
+    </style>
+</head>
+<body>
+
+    <!-- 
+    boxmodel - layout of an element
+    content(w and h) - padding (space around the contet) - border(line around the padding) - margin(space between element and other elemtn)
+
+    box-sizing:border-box
+               content-box
+
+    
+
+    way to apply color
+    by name
+    rgb(0-255,0-255,0-255)
+    hex- 0-9 a-f
+    hsl(0-360, 100% , 50%)
+
+    display :
+
+    inline
+    block
+    inline-block: inline block element behaves like a inline element 
+    but can take properties like block level elemnt
+
+    how to hide an element
+
+
+    combinators
+    it is used to select elements based on the relationship between the elements
+    
+    descendent selector
+    it is denoted by space
+    it is used to apply styles to the childs and subchilds of an ele
+
+    child selector 
+    it is denoted by >
+    it is used to apply styles to the direct child of an element
+
+    adjacent sibling selector
+    it is denoted by +
+    it is used to apply styles to the element that comes
+     after the selected element
+
+     general sibling selector
+     it is denoted by ~
+     it is used to apply styles to the element
+      that comes after the selected elements
+
+
+      display: block
+      inline
+      inline-block
+      none 
+
+      visibility:hidden
+
+      cards
+      combinators
+    -->
+
+    <div>
+        <img src="Doraemon_character.png" alt="">
+        <p>anime 1</p>
+        <p>doraemon</p>
+        <a href="">click me</a>
+    </div>
+
+    <div>
+        <img src="NobitaNobi.png" alt="">
+        <p>anime 2</p>
+        <p>Nobita</p>
+        <a href="">click me</a>
+        <section>
+            <p>some section</p>
+        </section>
+
+    </div>
+
+    
+    <div>
+        <img src="Suneo_Honekawa.png" alt="">
+        <p>anime 2</p>
+        <p>Nobita</p>
+        <a href="">click me</a>
+    </div>
+
+    
+    <div>
+        <img src="Gian.png" alt="">
+        <p>anime 2</p>
+        <p>Nobita</p>
+        <a href="">click me</a>
+    </div>
+    
+   
+
+    
+    <div>
+        <img src="Doraemon_character.png" alt="">
+        <p>anime 1</p>
+        <p>doraemon</p>
+        <a href="">click me</a>
+    </div>
+
+    <div>
+        <img src="NobitaNobi.png" alt="">
+        <p>anime 2</p>
+        <p>Nobita</p>
+        <a href="">click me</a>
+    </div>
+
+    
+    <div>
+        <img src="Suneo_Honekawa.png" alt="">
+        <p>anime 2</p>
+        <p>Nobita</p>
+        <a href="">click me</a>
+    </div>
+
+    
+    <div>
+        <img src="Gian.png" alt="">
+        <p>anime 2</p>
+        <p>Nobita</p>
+        <a href="">click me</a>
+    </div>
+    <p>some outside content</p>
+
+    <h1>some heading content</h1>
+    <h1>some heading content</h1>
+    <h1>some heading content</h1>
+    <h1>some heading content</h1>
+    <h1>some heading content</h1>
+    <h1>some heading content</h1>
+    <h1>some heading content</h1>
+
+   
+</body>
+</html>
