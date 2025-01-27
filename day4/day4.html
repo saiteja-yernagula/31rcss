@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       a:link{
+        color:yellow;
+       }
+       a:visited{
+        color:green;
+       }
+       a:hover{
+        color:orange;
+       }
+       a:active{
+        color:orchid;
+       }
+
+       input:checked{
+        border:3px solid red;
+        outline:3px solid blue;
+       }
+
+
+       #el1:target{
+        background: lightblue;
+       }
+
+       #el2:target{
+        background: lightcoral;
+       }
+
+       li:nth-last-child(even){
+      background-color: green;
+       }
+
+       :root{
+        --primary:violet;
+        --secondary:lightblue;
+       }
+
+
+       p{
+        color:var(--primary);
+       }
+
+       div{
+        background: var(--primary);
+       }
+
+       h1{
+        border:1px solid var(--primary);
+        background: var(--secondary);
+       }
+
+    </style>
+</head>
+<body>
+    <!-- 
+    colors - by name rgb  hex hsl
+    display- block ,inline , inline-block
+    how to hide an element- display none , visibility hidden
+    combinators
+     descendent 
+     child 
+     adjacent sibling
+     general sibling
+
+
+
+     units 
+     absolute units - px, cm, mm , pt
+
+     relative units - %, em
+     %- depends on the parent
+     em- depends on the parent font size
+     vw- viewport width---
+     vh- viewport height---
+     rem- depends on the root element font size
+        html{
+        font-size:16px;
+        }
+
+    div{
+    font-size:2rem;//32px
+    }
+
+        mobile
+        html{
+        font-size:5px;
+        }/
+
+        pseudo class selectors
+        it is used apply styles based on the state of an element
+        and based on the position of the element
+
+
+        selector:state{
+        styles
+        }
+
+        unvisited
+
+        positions
+        first-child
+        last-child
+        nth-child(3)
+        nth-child(even or odd)
+        nth-last-child(3 or even or odd)
+
+
+        variables are used to store property values in css
+
+        //to declare variables
+
+        variable declaration
+        :root{
+        --primary-color: blue;
+
+        }
+
+        variable usage
+
+        h1{
+        color:var(--primary-color)
+        }
+
+
+
+
+
+
+     
+     
+
+    
+    
+    -->
+
+    <p>some content</p>
+
+    <div>some content by div</div>
+
+    <h1>some heading</h1>
+    
+    
+     
+</body>
+</html>
