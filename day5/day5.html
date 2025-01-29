@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 150px;
+            height: 200px;
+        }
+        div{
+            margin: 100px;
+            padding:60px;
+            border:4px solid blue;
+            position: relative;
+            height: 90vh;
+        }
+
+        #el1{
+            border:6px solid red;
+            position: absolute;
+           left:-75px;
+           bottom:-75px;
+
+
+        }
+
+        #el2{
+            position: absolute;
+            bottom:-75px;
+            right:-75px;
+        }
+        #el3{
+            position: absolute;
+            right:-75px;
+            top:-75px;
+        }
+        #el4{
+            position: absolute;
+            top:-75px;
+            left: -75px;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- 
+    units
+    absolute -fixd px pt cm mm inch
+    relative- % em rem vh vw
+
+    pseudo class selectors- apply the styles based on the state of an element 
+                          and position
+
+     variables - store the values of the styles in a variable and use it in the styles
+
+     :root{
+     --primary:1px solid red;
+     }
+    h1{
+    border:var(--primary)
+    }
+
+
+
+    pseudo element selectors
+    it is used to apply styles based on particular part of an element
+
+    syn
+
+    selector::pseudo{
+    //styles
+    }
+
+    first-line
+    first-letter
+    selection
+    placeholder
+    marker
+    before after
+
+    css positions
+
+    static
+    relative
+    absolute
+    fixed
+    sticky
+    
+    -->
+
+<div>
+    
+    <img src="code.png" alt="" id="el1">
+    <img src="code2.png" alt="" id="el2">
+    <img src="code3.png" alt="" id="el3">
+    <img src="code5.jpg" alt="" id="el4">
+</div>
+
+
+
+</body>
+</html>
