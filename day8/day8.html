@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* 
+        .container{
+            display: flex;
+            /* justify-content: space-evenly; */
+            /* height: 100vh; */
+            /* border:2px solid lightgray; */
+            /* flex-direction: row-reverse; */
+            /* align-items: center; */
+            /* align-content: space-around; */
+            /* gap:1px 30px; */
+            /* row-gap: 5px;
+            column-gap: 20px;
+        } */
+             /* header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header>div{
+            display: flex;
+        } */
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .headerchild2{
+            display: flex;
+            gap:20px;
+        }
+
+        .container2{
+            margin-top:20px;
+            display: flex;
+        }
+        img{
+            width:300px;
+        }
+        .child1,.child2{
+            width: 50%;
+            padding:20px;
+        }
+        button{
+            background: violet;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+
+    flexbox
+
+    flexbox is used to create one dimensional layout and it is used to 
+    complex layouts 
+    flexbox have flex parent properties(flex container) and child properties(flex items)
+    by apply display:flex in the parent we can control child items
+
+
+    flex container(parent properties)
+    1) display:flex; - it is used to flex container
+    2) justify-content: it is used control the child items on the main axis
+                    flex-start
+                    flex-end
+                    center
+                    space-between
+                    space-evenly
+                    space-around
+
+
+     3)  align items: it is used to control the child items on cross axis
+                  stretch (default)
+                  flex-start
+                  flex-end
+                  center
+
+     4) flex-direction: it is used to control the direction of the child items
+                    row(default)
+                    row-reverse
+                    column
+                    column-reverse
+
+    5) flex-wrap: it is used to control wrapping of the child items
+     in the flex container
+      it is used to create mutliple rows
+
+    6) align-content: it is used to control the alignment of the child
+     items in the cross axis when there are multiple rows
+                     : center
+                     : stretch
+                     : flex-start
+                     : flex-end
+                     : space-between
+                     : space-evenly
+                     : space-around
+    
+     7) gap: it is used to space between the rows and cols
+        row-gap: 10px;
+        column-gap: 10px;
+        gap:rowgap columngap;
+             10px   20px;
+
+     8) flex-flow: flex-direction wrap
+                   row-reverse    wrap;
+
+
+
+
+
+
+
+
+
+    -->
+<!-- 
+    <header>
+        <h1>Brand name</h1>
+        <div>
+            <div>about</div>
+            <div>services</div>
+            <div>contact</div>
+        </div>
+    </header> -->
+
+    <header class="container">
+        <h1>The Webpage</h1>
+        <div class="headerchild2">
+            <div>home</div>
+            <div>about</div>
+            <div>info</div>
+            <div>services</div>
+        </div>
+    </header>
+
+    <div class="container2">
+        <div class="child1">
+            <h1 class="child1a">Website <br>design</h1>
+            <p class="child1b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur reiciendis vitae ipsa asperiores repellat, dicta voluptatem repudiandae quaerat nemo autem enim ab non vel officia similique rem, quod excepturi!</p>
+             <button>button name</button>
+        </div>
+        <div class="child2">
+            <img src="https://i0.wp.com/st4.depositphotos.com/1032998/22808/v/1600/depositphotos_228087374-stock-illustration-web-design-studio-website-creation.jpg?ssl=1" alt="">
+        </div>
+    </div>
+    
+
+</body>
+</html>
