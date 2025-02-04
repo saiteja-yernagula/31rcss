@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 100vh;
+            background: lightgrey;
+            display: grid;
+            gap:20px;
+            grid-template-columns:repeat(3,200px);
+            justify-content: space-evenly;
+            align-content: space-around;
+        
+            
+        }
+        .child{
+            background: lightcoral;
+            padding:20px;
+        }
+
+      
+
+        /* 
+        grid
+        it is used to multi dimensional layout 
+        mainly used for creating complex layout
+        
+        it should be user where there is a multi rows
+        and requirement of merging
+        
+        grid container
+       1)  display:grid;
+       2)  grid-template-colums
+        it is used to define the number of columns  and 
+        size of the each columns
+         
+            grid-template-columns: size size ;
+
+            grid-template-columsn: 20px 100px 100px ;
+                                  auto auto auto;
+                                  30% 70%;
+                                  1fr 2fr 2fr
+            grid-template-columns:repeat(5,auto);
+
+            grid-template-rows:
+            no of rows and size of each row
+
+            3) gap:rowgap columngap;
+                   10px 20px;
+            
+            4) justify-content: end;
+                                start;
+                                center;
+                                space-between;
+                                space-evenly;
+                                space-around;
+            5) align-content:end;
+                                start;
+                                center;
+                                space-between;
+                                space-evenly;
+                                space-around;
+
+ 
+            
+        
+
+
+
+        grid-items
+        */
+    </style>
+</head>
+<body>
+    <!-- 
+    
+    flex child properties
+    order
+    flex-basis
+    flex-grow
+    flex-shrink
+    align-self
+
+    flex: flex-grow flex-shrink flex-basis;
+    
+    -->
+
+    <div class="container">
+        <div class="child" id="el1">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+        
+    </div>
+    
+
+   
+</body>
+</html>

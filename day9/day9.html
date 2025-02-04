@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border:1px solid red;
+            display: flex;
+            gap:20px;
+            height: 60vh;
+            align-items: center;
+
+           
+            /* align-items: flex-end; */
+            /* justify-content: flex-end;
+            2 3 1 4
+            -1 0 1 2 */
+        }
+
+        .container>div{
+            padding: 20px;
+        
+            background-color: lightcoral;
+            font-size: 50px;
+        }
+
+        .item4{
+            /* order:-1 */
+        }
+        .item3{
+            /* order:0 */
+        }
+        .item2{
+            /* order:1 */
+            /* flex-basis: 70%; */
+            /* flex-grow: 3; */
+            align-self: flex-start;
+        }
+
+        .item1{
+            flex-shrink: 10;
+            /* it prevent the shrinkage */
+            /* flex-grow: 1; */
+            /* order:2; */
+            /* flex-basis: 30%; */
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 
+    
+
+    flexbox -
+    create one dimensional layout
+
+    flex-container:
+     display:flex;
+     justify-content:  flex-star end center betwwe around evenly
+     align-items: flex-start end center baseline stretch
+                croxx axis
+    
+    flex-direction:row /column/reverse row/column reverse
+    flex-wrap: wrap /wrap-reverse
+    align-content:flex-star end center betwwe around evenly
+
+    gap: rowgap colgap;
+    flex-flow: directtion wrap
+              row  wrap
+
+
+
+    flex-item (child properties):
+    order: specifies which item should comes first
+        default-0
+        1
+    
+    flex-basis: it specifies intial length of an child element
+
+    flex-grow: it specifies how much the child element
+     should grow if there is space left over or relative to another
+
+
+     flex-shrink:
+     it specifies how much the child element 
+     should shrink relative to another
+     
+     0- prvent the shrinkage
+     10 - 10 times extra shrinkage
+
+     aling-self:
+      it is used to control the individual child item on cross axis
+     
+     -->
+
+    <div class="container">
+        <div class="item1">should shrink relative to another</div>
+        <div class="item2">should shrink relative to another</div>
+         <div class="item3">should shrink relative to another</div> 
+        <!-- <div class="item4">4</div> -->
+
+    </div>
+
+
+</body>
+</html>
