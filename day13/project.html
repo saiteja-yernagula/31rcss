@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding:0;
+        }
+       html,body{
+        overflow-x: hidden;
+       }
+
+
+      .el4,.el5,.el6{
+            border: 1px solid red;
+            height:100vh;
+        }
+
+        .el1{
+            padding: 1% 5%;
+            background: darkblue;
+            color:white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top:0;
+            
+        }
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap:5%
+        }
+        ul>li{
+            list-style-type: none;
+        }
+
+        /* second section styling */
+
+        .el2{
+            padding:1% 5%;
+            background: darkblue;
+            color:white;
+            display: flex;
+            margin-bottom: 10%;
+        }
+        .el2a{
+            flex-basis: 50%;
+        }
+        .el2b{
+            flex-basis:50%;
+        }
+        .p{
+            padding: 2%;
+        }
+
+        #mobile {
+            display: none;
+        }
+
+        .mobile2{
+                display: none;
+            }
+
+
+            .el3{
+                text-align: center;
+            }
+
+            .el3dcards{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                gap:10%;
+                padding:5%
+            }
+            .el3dcards>div{
+                box-shadow: 0px 0px 2px 1px grey;
+
+            }
+
+        @media screen and (width<576px){
+            .el2{
+                flex-direction: column;
+               
+            }
+            #lap{
+                display: none;
+            }
+
+          
+
+            #mobile{
+                display: block;
+            }
+
+            .btn:focus+.mobile2{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+
+    project approach
+    1. project should contain min 6-8 section
+    2. project should be responsive
+    3. use postion properties only when it is necessary
+      ( relative combination of absolute)
+    4. use third party websites and tools (integration)
+    5. *{
+       box-sizing :border-box;
+       margin:0;
+       padding: 0;
+       }
+    6. go one extra mile
+    7. use border and comments for debugging
+
+
+    process
+
+    1) analyze the parent sections
+    2) create parent section-create a wireframe
+       border:1px solid red
+       heigth:100vh
+    3) analzye the child sectin
+    4) create html structue
+    5) use bootstrap for navbar  and carousel(sliders)
+    
+    
+    -->
+    
+
+    <div class="el1">
+
+        <h1>Business</h1>
+        <ul id="lap">
+            <li>content</li>
+            <li>content</li>
+            <li>content</li>
+        </ul>
+            <button class="btn" id="mobile">icon</button>
+
+        <h1 class="mobile2">home about services</h1>
+    </div>
+
+
+    <div class="el2">
+        <div class="el2a">
+
+            <h1 class="p">
+                Corporate & Business Site Template by Ayro UI.
+            </h1>
+            <p class="p">
+
+                We are a digital agency that helps brands to achieve their business outcomes. We see technology as a tool to create amazing things.
+            </p>
+
+            <div class="p">
+                <button>GET Started</button> 
+                <span>icon</span>
+                <span>watch intro</span>
+            </div>
+        </div>
+        <div class="el2b">
+            <img src="https://demo.ayroui.com/templates/business-template/assets/images/header/hero-image.jpg" width="100%" alt="">
+        </div>
+    </div>
+
+
+    
+    <div class="el2" style="background: white;color:black">
+        <div class="el2b">
+            <img src="https://demo.ayroui.com/templates/business-template/assets/images/about/about-img1.jpg" alt="" width="100%">
+        </div>
+        <div class="el2a">
+            
+            <h1 class="p">
+                Corporate & Business Site Template by Ayro UI.
+            </h1>
+            <p class="p">
+
+                We are a digital agency that helps brands to achieve their business outcomes. We see technology as a tool to create amazing things.
+            </p>
+
+            <div class="p">
+                <button>GET Started</button> 
+                <span>icon</span>
+                <span>watch intro</span>
+            </div>
+        </div>
+    </div>
+    <div class="el3">
+        <div class="el3a p">services</div>
+        <h1 class="el3b p">Our Best Services</h1>
+        <p class="el3c p">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+        </p>
+        <div class="el3dcards">
+            <div class="child ">
+                <div>icon</div>
+                <h6>Refreshing Design</h6>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+            <div class="child ">
+                <div>icon</div>
+                <h6>Refreshing Design</h6>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+            <div class="child ">
+                <div>icon</div>
+                <h6>Refreshing Design</h6>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+            <div class="child ">
+                <div>icon</div>
+                <h6>Refreshing Design</h6>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+            <div class="child ">
+                <div>icon</div>
+                <h6>Refreshing Design</h6>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+            <div class="child ">
+                <div>icon</div>
+                <h6>Refreshing Design</h6>
+                <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+            </div>
+            
+
+        </div>
+
+    </div>
+    <div class="el4">section4</div>
+    <div class="el5">section5</div>
+    <div class="el6">section6</div>
+
+    
+</body>
+</html>

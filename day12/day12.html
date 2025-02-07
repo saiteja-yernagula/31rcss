@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        grid child properties
+        grid-column-start
+        grid-column-end
+        grid-row-start
+        grid-row-end
+
+        grid-column:1/2;
+        grid: row 1px / 4px;
+        grid-area:header
+
+        grid-template-areas: 
+        " header header header"
+        " "
+        " "
+        "  f     f        f"
+
+        responsiveness of website
+        its an ability of an website to adapt and adjust the layout
+        based on the different device screens
+
+        media queries
+        it is used to apply styles based on condition of device rendering the
+    content
+
+
+    @media screen and (condition){
+     css syntax
+     h1{
+     color :red;
+     }
+     p{
+     fontsize:40px;
+     }
+    }
+
+    min-width:  
+     60
+     61 62 ++
+
+    max-width
+
+    100
+    99
+    --
+        
+        
+        */
+
+
+
+
+
+     @media screen and (max-width:576px){
+        html{
+            font-size: 10px;
+        }
+        body{
+            background-color: blue;
+        }
+        h1{
+            color:yellow;
+        }
+        p{
+            color:white;
+            font-size: 50px;
+        }
+     }
+
+
+
+
+
+     @media screen and (width>576px) and (width<768px){
+        body{
+            background-color: green;
+        }
+     }
+
+     @media screen and (width>768px) and (width<992px){
+         body{
+            background-color: yellow;
+         }
+     }
+
+     @media screen and (width>992px) and (width<1200px){
+         body{
+            background-color: violet;
+         }
+     }
+
+
+     @media screen and (width>1200px) {
+         body{
+            background-color: lightseagreen;
+         }
+     }
+    </style>
+</head>
+<body>
+
+    <h1>some heading</h1>
+    <p>some paragraph</p>
+
+    
+</body>
+</html>

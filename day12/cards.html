@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding:0;
+        }
+
+        .parent{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap:20px;
+            grid-template-areas:
+            "a a a"
+            "b b b"
+            "c c e"
+            "d d e"
+            "f f f";
+        }
+
+        .parent>div{
+            padding:20px;
+            background:lightsalmon;
+
+        }
+        .header{
+            grid-area:a
+        }
+        .nav{
+            grid-area:b
+        }
+        .section{
+            grid-area:c
+        }
+        .article{
+            grid-area:d
+        }
+        .aside{
+            grid-area:e
+        }
+        .footer{
+            grid-area:f
+        }
+        .container{
+            border:1px solid red;
+            /* margin:10px; */
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        @media screen and (width<576px){
+            .parent{
+                grid-template-areas: 
+                "a"
+                "b"
+                "c"
+                "d"
+                "e"
+                "f";
+            }
+        }
+        /* img{
+            width:100%;
+            height:100%;
+        }
+
+        .child{
+            box-shadow: 0px 0px 2px 2px blue ;
+         
+        }
+
+
+        @media screen and (width<768px){
+            .container{
+                grid-template-columns: auto auto;
+            }
+        }
+        
+
+        @media screen and (width<576px){
+
+            .container{
+                /* display: block; */
+      
+    </style>
+</head>
+<body>
+    
+
+    <!-- 
+    inline-block
+    flex
+    grid-template-columns
+    grid-template-areas
+    
+    -->
+
+    <div class="parent">
+        <div class="header">header</div>
+        <div class="nav">navbar</div>
+        <div class="section">section1</div>
+        <div class="article">article</div>
+        <div class="aside">aside</div>
+        <div class="footer">footer</div>
+    </div>
+
+<!-- 
+    <div class="container">
+        <div class="child">
+            <img src="code.png" alt="">
+            <h6>img 1</h6>
+            <p> some content</p>
+        </div>
+
+        <div class="child">
+            <img src="code2.png" alt="">
+            <h6>img2</h6>
+            <p> some content</p>
+            <p></p>
+        </div>
+
+        <div class="child">
+            <img src="code3.png" alt="">
+            <h6>img3</h6>
+            <p> some content</p>
+
+        </div>
+        
+        <div class="child">
+            <img src="code5.jpg" alt="">
+            <h6>img 4</h6>
+            <p> some content</p>
+        </div>
+    </div> -->
+
+
+</body>
+</html>
