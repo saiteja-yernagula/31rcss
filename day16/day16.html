@@ -4,8 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* .el1{
+            padding: 20px;
+            width:100px;
+            background-color:lightgreen;
+            animation-name: move;
+            animation-duration: 4s;
+            animation-iteration-count: 4;
+            /* animation-delay: 2s; */
+            /* animation-timing-function: ease-out; */
+            
+
+            /* animation-fill-mode:both ; */
+            /* animation-direction: alternate-reverse; */
+           
+           
+        /* } */ 
+
+        /* @keyframes backgroundchange{
+            stage 1
+           0%{
+                background: red;
+            }
+           25%{
+                background: blue;
+            }
+           50%{
+                background: yellow;
+            }
+            75%{
+                background: orange;
+            }
+            100%{
+                background: violet;
+            }
+        } */
+/* 
+     @keyframes move{
+        0%{
+            transform: translate(0px,0px);
+            background-color: orange;
+
+        }
+        33%{
+            transform: translate(600px,0px);
+
+        }
+        66%{
+            transform: translate(600px, 200px);
+        }
+        100%{
+            transform: translate(0px, 200px);
+        }
+     } */
+
+
+     body>div{
+        background: skyblue;
+        width: 100px;
+        padding: 20px;
+        margin:3px;
+        animation-name: move;
+        animation-duration: 5s;
+     }
+
+
+     @keyframes move{
+        from{
+            transform: translate(0px,0px);
+
+        }
+        to{
+            transform: translate(600px, 0px);
+        }
+     }
+    </style>
 </head>
 <body>
+
+    <!-- 
+  
+
+    animations
+
+    animations are defined using keyframes
+
+
+    //definining an animation
+    @keyframes animationname{
+    from{
+    background-color:red;
+    padding:0px
+    }
+    to{
+    background-color:blue;
+    padding:200px;
+    }
+    }
     
+
+    animation-name: animationname;
+    animation-duration: 5s;
+    
+    -->
+<!-- 
+    <div class="el1">some content</div>
+
+    <h1>heading</h1> -->
+
+
+    <div class="child1" style="animation-timing-function:ease ;" >ease</div>
+    <div class="child2" style="animation-timing-function:linear  ;">linear</div>
+    <div class="child3" style="animation-timing-function: ease-in;">ease-in</div>
+    <div class="child4" style="animation-timing-function:ease-out ;">ease-out</div>
+    <div class="child5" style="animation-timing-function:ease-in-out ;">ease-in-out</div>
+    
+
+    <!-- 
+    floats-clearing techniques
+    gradients
+    attribute selectors
+    filter
+    
+
+
+
+    
+    
+    -->
 </body>
 </html>
